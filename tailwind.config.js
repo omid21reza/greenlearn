@@ -6,6 +6,8 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+      sans: ['Vazirmatn', 'sans-serif']},
       colors: {
         primary: {
           DEFAULT: '#064e3b', // سبز تیره
@@ -20,5 +22,5 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-rtl'),],
 }
