@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "باشگاه مشتریان",
+    "description": "صفحه خدمات با کارت‌های گرادینت و افکت hover",
+    "tags": ["React", "Tailwind"],
+    "status": "در حال انجام",
+    "github": "https://github.com/...",
+    "demo": "https://...",
+    "image": "/projects/client-club.jpg"
+  },
+  {
+    "id": 2,
+    "title": "فرم لاگین پیشرفته",
+    "description": "فرم با اعتبارسنجی و انیمیشن",
+    "tags": ["React", "Formik", "Yup"],
+    "status": "تکمیل شده",
+    "github": "https://github.com/..."
+  }
+]
