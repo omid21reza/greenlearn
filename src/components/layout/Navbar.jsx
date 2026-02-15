@@ -19,7 +19,7 @@ function Navbar() {
   return (
     <nav className="bg-primary text-white shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        {/* لوگو وسط و بزرگتر - فقط دسکتاپ */}
+        {/* لوگو دسکتاپ - وسط و بزرگ */}
         <div className="hidden md:flex justify-center py-4">
           <Link to="/" className="flex flex-col items-center group">
             <GiPineTree className="text-6xl transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 text-accent" />
@@ -29,13 +29,12 @@ function Navbar() {
           </Link>
         </div>
 
-        {/* هدر موبایل */}
+        {/* هدر موبایل - لوگو چپ، دکمه منو راست */}
         <div className="md:hidden flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2">
             <GiPineTree className="text-3xl text-accent" />
             <span className="text-lg font-bold">GreenLearn</span>
           </Link>
-          
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="w-10 h-10 flex items-center justify-center bg-primary-light rounded-lg hover:bg-accent transition-colors"
@@ -46,7 +45,7 @@ function Navbar() {
           </button>
         </div>
 
-        {/* منوی دسکتاپ با آیکون‌های زیبا */}
+        {/* منوی دسکتاپ - آیکون‌های زیر لوگو */}
         <div className="hidden md:flex justify-center items-center gap-4 pb-3">
           {navItems.map((item) => {
             const Icon = item.icon;
@@ -70,7 +69,7 @@ function Navbar() {
           })}
         </div>
 
-        {/* منوی موبایل */}
+        {/* منوی موبایل - اسلایدی */}
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-primary-light animate-fadeIn">
             {navItems.map((item) => {
@@ -81,7 +80,7 @@ function Navbar() {
                   to={item.path}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`
-                    block px-4 py-3 rounded-lg transition-all duration-300
+                    px-4 py-3 rounded-lg transition-all duration-300
                     flex items-center gap-3 text-base font-medium mb-1
                     ${isActive(item.path) 
                       ? 'bg-accent text-primary-dark' 
@@ -98,6 +97,7 @@ function Navbar() {
         )}
       </div>
 
+      {/* انیمیشن fadeIn */}
       <style>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(-10px); }

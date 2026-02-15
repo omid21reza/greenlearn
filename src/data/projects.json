@@ -2,19 +2,57 @@
   {
     "id": 1,
     "title": "باشگاه مشتریان",
-    "description": "صفحه خدمات با کارت‌های گرادینت و افکت hover",
-    "tags": ["React", "Tailwind"],
+    "description": "صفحه خدمات با کارت‌های گرادینت و افکت hover. این پروژه شامل طراحی مدرن و ریسپانسیو با Tailwind CSS است.",
+    "tags": ["React", "Tailwind", "Responsive"],
     "status": "در حال انجام",
-    "github": "https://github.com/...",
-    "demo": "https://...",
-    "image": "/projects/client-club.jpg"
+    "github": "https://github.com/omid21reza/greenlearn",
+    "demo": "https://greenlearn.vercel.app",
+    "icon": "building"
   },
   {
     "id": 2,
     "title": "فرم لاگین پیشرفته",
-    "description": "فرم با اعتبارسنجی و انیمیشن",
-    "tags": ["React", "Formik", "Yup"],
-    "status": "تکمیل شده",
-    "github": "https://github.com/..."
+    "description": "فرم با اعتبارسنجی و انیمیشن. شامل validation با Formik و Yup، نمایش خطاها و انیمیشن‌های ورودی.",
+    "tags": ["React", "Formik", "Yup", "Animation"],
+    "status": "در حال انجام",
+    "github": "https://github.com/omid21reza/greenlearn",
+    "icon": "lock"
+  },
+  {
+    "id": 3,
+    "title": "داشبورد مدیریت",
+    "description": "داشبورد با نمودارهای تعاملی و کارت‌های اطلاعاتی. با Recharts و Tailwind طراحی شده.",
+    "tags": ["React", "Recharts", "Dashboard"],
+    "status": "در حال انجام",
+    "demo": "https://greenlearn.vercel.app",
+    "icon": "chart"
+  },
+  {
+    "id": 4,
+    "title": "اپلیکیشن آب و هوا",
+    "description": "نمایش وضعیت آب و هوا با API. با استفاده از fetch و useState ساخته شده.",
+    "tags": ["React", "API", "Fetch"],
+    "status": "در حال انجام",
+    "github": "https://github.com/omid21reza/greenlearn",
+    "icon": "weather"
+  },
+  {
+    "id": 5,
+    "title": "تودو لیست پیشرفته",
+    "description": "مدیریت کارها با localStorage و drag & drop. قابلیت دسته‌بندی و جستجو.",
+    "tags": ["React", "localStorage", "dnd-kit"],
+    "status": "در حال انجام",
+    "github": "https://github.com/omid21reza/greenlearn",
+    "demo": "https://greenlearn.vercel.app",
+    "icon": "todo"
+  },
+  {
+    "id": 6,
+    "title": "وبلاگ شخصی",
+    "description": "وبلاگ با قابلیت نمایش پست‌ها و Markdown. با React Router و React Markdown.",
+    "tags": ["React", "Markdown", "Router"],
+    "status": "در حال انجام",
+    "demo": "https://greenlearn.vercel.app",
+    "icon": "blog"
   }
 ]
