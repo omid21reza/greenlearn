@@ -7,10 +7,13 @@ import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
+import Register from './pages/Register';
+import { AuthProvider } from './context/AuthContext';
 
 function App() {
   return (
     <BrowserRouter>
+    <AuthProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,15 +22,17 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route
-  path="/dashboard"
-  element={
-    <ProtectedRoute>
-      <Dashboard />
-    </ProtectedRoute>
-  }
-/>
+          path="/dashboard"
+          element={
+         <ProtectedRoute>
+           <Dashboard />
+         </ProtectedRoute>
+          }/>
+       <Route path="/register" element={<Register />} />
       </Routes>
+      </AuthProvider>
     </BrowserRouter>
+    
   );
 }
 
